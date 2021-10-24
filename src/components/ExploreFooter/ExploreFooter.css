@@ -1,0 +1,135 @@
+.footer-container {
+    position: relative;
+    height: fit-content;
+    width: 100%;
+    background: linear-gradient(to right, #DAD299, #B0DAB9);
+    font-size: 18px;
+    top: 350px;
+    color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    width: 85%;
+}
+
+.row.top {
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.detail,
+.address {
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+}
+
+.top-title {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.top-title,
+.top-text {
+    margin-bottom: 10px;
+}
+
+.foc-info {
+    padding: 10px;
+}
+
+.foc-info > a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.privacy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.policy-list {
+    display: flex;
+    list-style: none;
+}
+
+.policy-list > li {
+    margin-right: 10px;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-right: 1px solid black;
+    padding-right: 10px;
+}
+
+.policy-list > li:last-child {
+    border-right: none;
+    cursor: pointer;
+}
+
+.social-media {
+    color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+.social-media > i {
+    font-size: 25px;
+    margin: 0 10px;
+}
+.fa-instagram:hover {
+    color: #f09433;
+}
+
+.fa-facebook-square:hover {
+    color: #1877f2;
+}
+.fa-youtube:hover {
+    color: #ff0000;
+}
+
+.bottom {
+    text-transform: uppercase;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Baloo 2 Bold";
+    font-size: 20px;
+    text-align: center;
+}
+
+@media (max-width: 1024px) and (min-width: 740px) {
+    .policy-list > li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 739px) {
+    .privacy {
+        flex-direction: column-reverse;
+        padding: 15px 0;
+        height: 120px;
+        align-items: space-between;
+    }
+    .policy-list > li {
+        text-align: center;
+    }
+
+    .row.top {
+        flex-direction: column;
+    }
+    .detail,
+    .address {
+        width: 100%;
+        text-align: center;
+    }
+}

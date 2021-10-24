@@ -1,0 +1,130 @@
+.form {
+    opacity: 0;
+    animation: onloadxtoleft 0.3s ease-in 0.3s forwards;
+}
+
+.form h2 {
+    color: black;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.form form {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form .form-row {
+    position: relative;
+    width: 80%;
+}
+
+.form .form-row span {
+    color: #000;
+    position: absolute;
+    left: 0;
+    line-height: 40px;
+    margin-left: 10px;
+    transition: all 0.5s;
+    z-index: 2;
+}
+
+.form button {
+    align-self: flex-start;
+    width: 100px;
+    height: 50px;
+    border: none;
+    background-color: var(--icon-color);
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.1s;
+    font-family: "Baloo 2", Arial, sans-serif;
+}
+
+.form button:hover {
+    background-color: var(--hover-color);
+    font-size: 22px;
+    transition: all 0.1s;
+}
+
+.form .form-row input,
+.form .form-row textarea {
+    position: relative;
+    border: none;
+    border-bottom: 2px #ccc solid;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    font-size: 20px;
+    z-index: 3;
+    opacity: 0.3;
+}
+
+.form .form-row textarea {
+    overflow: hidden;
+    resize: none;
+}
+
+.form .form-row input:focus,
+.form .form-row input:valid,
+.form .form-row textarea:focus,
+.form .form-row textarea:valid {
+    border: none;
+    outline: none;
+    border-bottom: 2px #ccc solid;
+    opacity: 1;
+}
+
+.form .form-row input:focus ~ span.label,
+.form .form-row textarea:focus ~ span.label {
+    font-size: 10px;
+    color: rgb(189, 27, 27);
+    transform: translateY(-20px);
+    transition: all 0.5s;
+    z-index: 4;
+}
+
+.form .form-row input:focus ~ span.label,
+.form .form-row input:valid ~ span.label,
+.form .form-row textarea:focus ~ span.label,
+.form .form-row textarea:valid ~ span.label {
+    font-size: 10px;
+    color: red;
+    transform: translateY(-20px);
+    transition: all 0.5s;
+    z-index: 4;
+}
+
+.error {
+    display: none;
+    position: relative;
+    margin-top: -10px;
+    color: red !important;
+    font-size: 10px;
+}
+
+.error.hide {
+    display: none;
+}
+
+.error.show { 
+    display: block;
+}
+
+@media (max-width: 1024px) and (min-width: 740px) {
+    .form h2 {
+        margin: 0;
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 739px) {
+    .form h2 {
+        margin: 0;
+        padding: 20px 0;
+    }
+}

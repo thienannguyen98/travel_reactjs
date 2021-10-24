@@ -1,0 +1,76 @@
+#contact-container {
+    width: 100%;
+    min-height: 100vh;
+    background: url("../../asset/images/contact-background.jpg") no-repeat;
+    background-size: cover;
+    font-family: "Baloo 2";
+}
+
+/* MAIN  */
+
+#contact-main {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    min-height: 100vh;
+}
+
+#contact-main .contact-text {
+    position: relative;
+    max-width: 70%;
+    padding-top: 80px;
+    margin: auto;
+    text-align: center;
+    animation: onloadytobottom 0.3s ease-in;
+}
+
+#contact-main .form-contain {
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50px;
+    min-height: 450px;
+    display: flex;
+}
+
+#contact-main .form-contain .form {
+    width: 50%;
+    background-color: #fff;
+}
+
+@media (min-width: 1025px) {
+}
+
+@media (max-width: 1024px) and (min-width: 740px) {
+    #contact-main .form-contain {
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        display: block;
+        overflow: auto;
+    }
+
+    #contact-main .form-contain .form {
+        height: 450px;
+        width: 90%;
+        margin: 100px auto;
+    }
+}
+
+@media (max-width: 739px) {
+    #contact-main .form-contain {
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        display: block;
+        overflow: auto;
+    }
+
+    #contact-main .form-contain .form {
+        height: 450px;
+        width: 90%;
+        margin: 100px auto;
+    }
+}

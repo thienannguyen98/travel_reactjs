@@ -1,0 +1,123 @@
+.contain {
+    flex: 8;
+    display: flex;
+}
+.contain-info {
+    margin: auto;
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-shadow: 0 0 1px #000;
+    font-family: "Baloo 2";
+}
+
+.intromain {
+    height: 100%;
+    width: 70%;
+    animation: onloadxtoright 0.3s ease-in;
+}
+
+.intromain h1,
+.intromain h2,
+.intromain p,
+.intromain .explore {
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.intromain p {
+    padding-right: 50px;
+}
+
+.intromain .explore {
+    font-family: "Baloo 2", Arial, Helvetica, sans-serif;
+    width: 120px;
+    height: 50px;
+    border: none;
+    color: var(--icon-color);
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.intromain .explore a {
+    text-decoration: none;
+    color: var(--icon-color);
+}
+
+.intromain .explore:hover {
+    color: var(--hover-color);
+}
+
+.intromain .explore:hover .fa-arrow-right,
+.intromain .explore:hover a {
+    color: var(--hover-color);
+}
+
+.intromain .explore .fa-arrow-right {
+    margin-left: 5px;
+    color: var(--icon-color);
+}
+
+.home-video {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    cursor: pointer;
+    animation: onloadxtoleft 0.3s ease-in;
+}
+
+.home-video .border {
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid var(--icon-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-video:hover .border {
+    border-color: var(--hover-color);
+}
+
+.home-video .border .fa-play {
+    color: var(--icon-color);
+    font-size: 20px;
+}
+.home-video:hover .fa-play {
+    color: var(--hover-color);
+}
+
+@media (max-width: 739px) {
+    .contain {
+        margin-top: 150px;
+    }
+
+    .intromain h2,
+    .intromain h1 {
+        text-align: center;
+    }
+
+    .contain-info {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .intromain {
+        text-align: center;
+    }
+    .intromain p {
+        padding: 0;
+        text-align: justify;
+    }
+    .home-video {
+        margin: 30px 0;
+    }
+}
