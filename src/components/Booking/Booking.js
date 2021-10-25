@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState,useCallback } from 'react';
+import { useState, useCallback } from 'react';
 import "./Booking.css";
 import * as data from '../../const';
 import Item from './Item/Item';
@@ -11,7 +11,7 @@ function Booking(props) {
 
     var [search, setSearch] = useState('');
     var [sort, setSort] = useState(0);
-    
+
 
     let type = ['Giá tăng', 'Giá giảm', 'Đánh giá']
 
@@ -46,7 +46,7 @@ function Booking(props) {
     const buy = useCallback(
         (e) => {
             props.buy(e);
-        },[props]);
+        }, [props]);
 
     return (
         <>

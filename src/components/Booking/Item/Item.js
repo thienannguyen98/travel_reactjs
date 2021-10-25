@@ -6,12 +6,12 @@ import { Link } from 'react-router-dom';
 
 function Item(props) {
 
-var [data] = useState({
-    name: props.name,
-    img: props.img,
-    heading: props.heading,
-    price: props.price
-})
+    var [data] = useState({
+        name: props.name,
+        img: props.img,
+        heading: props.heading,
+        price: props.price
+    })
 
     function senddata() {
         localStorage.setItem("item", JSON.stringify(data))

@@ -38,7 +38,7 @@ function Header() {
                 <h3><Link exact={'true'} to="/">Travel</Link></h3>
             </div>
             <div className="nav">
-                <ul  className={showNav ? 'nav-list on' : 'nav-list off'}>
+                <ul className={showNav ? 'nav-list on' : 'nav-list off'}>
                     <li className="nav-item"><NavLink exact={true} to="/" activeClassName='active'>Trang chủ</NavLink></li>
                     <li className="nav-item"><NavLink to="/Contact" activeClassName='active'>Liên hệ</NavLink></li>
                     <li className="nav-item"><NavLink to="/Explore" activeClassName='active'>Khám phá</NavLink></li>
