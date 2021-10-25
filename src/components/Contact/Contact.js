@@ -11,7 +11,8 @@ function Contact() {
             <div id="contact-main">
                 <div className="contact-text">
                     <h1>Liên hệ với chúng tôi</h1>
-                    <p>Bạn sẽ nhận đưcọ những lời khuyên vô cùng hữu ích trong việc chọn lựa những tour du lịch hợp với sở thích, nhu cầu và quan trọng
+                    <p>
+                        Bạn sẽ nhận được những lời khuyên vô cùng hữu ích trong việc chọn lựa những tour du lịch hợp với sở thích, nhu cầu và quan trọng
                         hơn là hợp lý với kinh tế của bạn
                     </p>
                 </div>
